@@ -5,26 +5,26 @@ Extract specific markets from the big market_history.jsonl file.
 USAGE EXAMPLES (run on VPS where market_history.jsonl lives):
 
 # 1. Extract all T6 markets (uses same classifier as live bot)
-python3 extract_markets.py /home/polybot/polymarket-bot/market_history.jsonl T6.jsonl --type T6
+python3 extract_markets.py ./market_history.jsonl T6.jsonl --type T6
 
 # 2. Extract specific markets by slug
-python3 extract_markets.py /home/polybot/polymarket-bot/market_history.jsonl subset.jsonl \
+python3 extract_markets.py ./market_history.jsonl subset.jsonl \
     --slugs btc-updown-5m-1776508500 btc-updown-5m-1776509700
 
 # 3. Extract with limit (just first 20 T6 markets)
-python3 extract_markets.py /home/polybot/polymarket-bot/market_history.jsonl T6_sample.jsonl \
+python3 extract_markets.py ./market_history.jsonl T6_sample.jsonl \
     --type T6 --limit 20
 
 # 4. Extract multiple types
-python3 extract_markets.py /home/polybot/polymarket-bot/market_history.jsonl mixed.jsonl \
+python3 extract_markets.py ./market_history.jsonl mixed.jsonl \
     --type T3 T6 --limit 30
 
 # 5. Extract markets where bn_flipped=True (bn_flip candidates)
-python3 extract_markets.py /home/polybot/polymarket-bot/market_history.jsonl bnflip_cands.jsonl \
+python3 extract_markets.py ./market_history.jsonl bnflip_cands.jsonl \
     --bn-flipped --limit 50
 
 # 6. Extract T6 markets where bn_flipped=True
-python3 extract_markets.py /home/polybot/polymarket-bot/market_history.jsonl t6_bnflip.jsonl \
+python3 extract_markets.py ./market_history.jsonl t6_bnflip.jsonl \
     --type T6 --bn-flipped
 """
 import sys, json, argparse

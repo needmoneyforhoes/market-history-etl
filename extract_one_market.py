@@ -2,13 +2,13 @@
 """
 Run this on your VPS:
   python3 extract_one_market.py
-It reads /home/polybot/polymarket-bot/market_history.jsonl
+It reads ./market_history.jsonl
 and dumps the full record for market 1777475400 to extracted_market.json
 """
 import json
 
 TARGET = '1777475400'
-PATH   = '/home/polybot/polymarket-bot/data/market_history.jsonl'
+PATH   = './data/market_history.jsonl'
 
 found = False
 with open(PATH) as f:

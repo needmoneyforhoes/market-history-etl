@@ -45,6 +45,6 @@ python3 poly_outcome_collector.py 7
 
 ## Data
 
-Every script reads or writes `.json`/`.jsonl`. Inputs (`market_history.jsonl`, `replay_*.json`, training JSONLs) are **not** included here — they live in the private `polymarket-data` repo and are referenced by path on the VPS (e.g. `/home/polybot/polymarket-bot/data/market_history.jsonl`). Point the path arguments at your local checkout of that data. `.gitignore` excludes all `*.json*`/`*.csv`/`*.parquet` so no dataset is ever committed.
+Every script reads or writes `.json`/`.jsonl`. Inputs (`market_history.jsonl`, `replay_*.json`, training JSONLs) are **not** included here — they live in the private `polymarket-data` repo and are referenced by path on the VPS (e.g. `./data/market_history.jsonl`). Point the path arguments at your local checkout of that data. `.gitignore` excludes all `*.json*`/`*.csv`/`*.parquet` so no dataset is ever committed.
 
 > Private research software. No warranty; use at your own risk.

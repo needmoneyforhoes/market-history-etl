@@ -40,3 +40,8 @@ Python 3.8+, standard library only (`json`, `argparse`, `urllib`, `concurrent.fu
 ## Data
 
 Datasets are not included. Point path arguments at your local checkout of the private `polymarket-data` repo (e.g. `$DATA_DIR/market_history.jsonl`). `.gitignore` excludes `*.json*`, `*.csv`, `*.parquet`, so no dataset is committed.
+
+## Feedback
+
+Suggestions, improvements, or something not working? Please
+[open an issue](https://github.com/needmoneyforhoes/market-history-etl/issues/new). Pull requests are welcome too.
